@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-10 13:43:13.739550",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "erp_account",
+  "comsys_account",
+  "debit",
+  "credit"
+ ],
+ "fields": [
+  {
+   "fieldname": "erp_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "ERP Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comsys_account",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comsys Account",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "debit",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Debit"
+  },
+  {
+   "default": "0",
+   "fieldname": "credit",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Credit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-07 13:24:04.112446",
+ "modified_by": "Administrator",
+ "module": "Comsys",
+ "name": "Accounts Mapping",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-10 13:48:34.965522",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "accounts_mapping",
+  "section_break_xrjl",
+  "cost_center_mapping",
+  "section_break_bvjv",
+  "employee_difference_account",
+  "customer_difference_account",
+  "column_break_bopf",
+  "employee_account",
+  "department_difference_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "accounts_mapping",
+   "fieldtype": "Table",
+   "label": "Accounts Mapping",
+   "options": "Accounts Mapping"
+  },
+  {
+   "fieldname": "section_break_xrjl",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "cost_center_mapping",
+   "fieldtype": "Table",
+   "label": "Cost Center Mapping",
+   "options": "Cost Center Mapping"
+  },
+  {
+   "fieldname": "section_break_bvjv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_difference_account",
+   "fieldtype": "Link",
+   "label": "Employee Credit Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_bopf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_difference_account",
+   "fieldtype": "Link",
+   "label": "Customer Credit Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "department_difference_account",
+   "fieldtype": "Link",
+   "label": "Department Difference Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "employee_account",
+   "fieldtype": "Link",
+   "label": "Employee Debit Account",
+   "options": "Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-01-08 20:30:59.138616",
+ "modified_by": "Administrator",
+ "module": "Comsys",
+ "name": "Account Integration Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
