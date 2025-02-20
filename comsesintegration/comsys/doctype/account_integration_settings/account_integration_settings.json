@@ -13,7 +13,9 @@
   "customer_difference_account",
   "column_break_bopf",
   "employee_account",
-  "department_difference_account"
+  "department_difference_account",
+  "invoice_employee_tab",
+  "element_id"
  ],
  "fields": [
   {
@@ -64,12 +66,22 @@
    "fieldtype": "Link",
    "label": "Employee Debit Account",
    "options": "Account"
+  },
+  {
+   "fieldname": "invoice_employee_tab",
+   "fieldtype": "Tab Break",
+   "label": "invoice Employee"
+  },
+  {
+   "fieldname": "element_id",
+   "fieldtype": "Data",
+   "label": "Element ID"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-01-08 20:30:59.138616",
+ "modified": "2025-02-18 17:59:23.335130",
  "modified_by": "Administrator",
  "module": "Comsys",
  "name": "Account Integration Settings",
