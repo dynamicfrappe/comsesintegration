@@ -39,6 +39,10 @@ def send_emoloyee_inovice(employee , posting_date , total):
 	setting = frappe.get_doc("Account Integration Settings")
 	nova_setting = frappe.get_doc("HR Intgration Setting",{"company":get_default_company()})
 
+	if not setting.element_id:
+		frappe.msgprint(_("Please Set Element ID in Account Integration Settings"))
+		return
+
 	if setting.element_id:
 		url = f"{nova_setting.url}PayrollEmpElementVal/Save"
 		date = get_next_year_and_month(posting_date)
