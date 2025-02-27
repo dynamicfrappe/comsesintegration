@@ -64,9 +64,10 @@ class BulkDayjournalEntry(Document):
 				"account": difference_account,
 				"debit_in_account_currency": total_credit - total_depit,
 			})
-		journal_entry.save(ignore_permissions=True)
+		journal_entry.insert(ignore_permissions=True)
 		self.journal_entry = journal_entry.name
 		self.save(ignore_permissions=True)
+		frappe.db.commit()
 		frappe.msgprint("Journal Entry Created Successfully")
 		return journal_entry
 
