@@ -36,6 +36,7 @@ class BulkDayjournalEntry(Document):
 		difference_account = get_dept_difference_account()
 		journal_entry = frappe.new_doc("Journal Entry")
 		journal_entry.posting_date = self.date
+
 		for account in self.accounts:
 			erp_account = get_account_name(account.account)
 			print(erp_account)
@@ -64,7 +65,7 @@ class BulkDayjournalEntry(Document):
 				"account": difference_account,
 				"debit_in_account_currency": total_credit - total_depit,
 			})
-		journal_entry.insert(ignore_permissions=True)
+		journal_entry.save(ignore_permissions=True)
 		self.journal_entry = journal_entry.name
 		self.save(ignore_permissions=True)
 		frappe.db.commit()
